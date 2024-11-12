@@ -183,4 +183,5 @@ body.dark-mode #home {
 }
 body.dark-mode .text1 {
     background-color: #1f1f1f;
+    color: #fff;
 }

@@ -97,6 +97,7 @@ nav ul li a {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 45%;
     text-align: center;
+   
 }
 
 .project-card img {
@@ -162,6 +163,10 @@ body.dark-mode .project-card {
     background-color: #333;
     color: #fff;
 }
+body.dark-mode .project-card2 {
+    background-color: #333;
+    color: #fff;
+}
 
 body.dark-mode footer {
     background-color: #1f1f1f;
@@ -184,4 +189,14 @@ body.dark-mode #home {
 body.dark-mode .text1 {
     background-color: #1f1f1f;
     color: #ffff;
+}
+
+.project-card2 {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+    margin-top: -7%;
 }

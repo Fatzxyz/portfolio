@@ -43,16 +43,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Mengubah teks tombol sesuai mode
         if (document.body.classList.contains('dark-mode')) {
-            darkModeToggle.textContent = '🌞 Mode Terang';
+            darkModeToggle.textContent = '🌞';
         } else {
-            darkModeToggle.textContent = '🌙 Mode Gelap';
+            darkModeToggle.textContent = '🌙';
         }
     });
 
     // Mengecek apakah dark mode sudah diset sebelumnya di localStorage
     if (localStorage.getItem('dark-mode') === 'enabled') {
         document.body.classList.add('dark-mode');
-        darkModeToggle.textContent = '🌞 Mode Terang';
+        darkModeToggle.textContent = '🌞';
     }
 
     // Menyimpan preferensi pengguna pada localStorage

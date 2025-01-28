@@ -3,118 +3,354 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portofolio Web Programmer">
-    <title>Fatz</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portofolio Pribadi - Web Developer">
+    <title>Portofolio - Web Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+ <link rel="stylesheet"     href="style.css">
 </head>
 <body>
-    <!-- Tombol Switch Dark Mode -->
-<button id="dark-mode-toggle" class="btn">🌙</button>
 
-    <!-- Header -->
-    <header>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="#home">Beranda</a></li>
-                    <li><a href="#about">Tentang Saya</a></li>
-                    <li><a href="#projects">Proyek</a></li>
-                    <li><a href="#contact">Kontak</a></li>
-                </ul>
+    <!-- Header Section -->
+    <header id="home">
+        <div class="container">
+            <div class="hero-content">
+                <!-- Foto Profil -->
+            <div class="profile-img">
+                <img src="https://i.pinimg.com/736x/6a/aa/df/6aaadf42c37b8cade212285e48a7a837.jpg" alt="Foto Profil">
             </div>
-        </nav>
-    </header>
-
-    <!-- Home Section -->
-    <section id="home">
-        <div class="hero">
-            <h1>Halo, Saya Fatih</h1>
-            <p>Web Developer & Programmer</p>
-            <a href="#about" class="btn">Lebih Lanjut</a>
+                <h1>Hai, Saya <span class="name">Fatih</span></h1>
+                <p>Web Developer | UI/UX Enthusiast | Teknologi & Inovasi</p>
+                <a href="#about" class="cta-btn">Pelajari Lebih Lanjut</a>
+            </div>
         </div>
-    </section>
-    <hr>
+       
+    </header>
 
     <!-- About Section -->
     <section id="about">
-        <div class="container">
+        <div class="container"></div>
             <h2>Tentang Saya</h2>
-            <p>Halo! Saya seorang web developer dengan pengalaman dalam membangun website responsif menggunakan HTML, CSS, dan JavaScript. Saya berfokus pada pengalaman pengguna yang hebat dan pengembangan front-end yang efisien.</p>
-            <img src="https://i.pinimg.com/736x/2f/ab/13/2fab135405983c97f595d2956a98e01b.jpg" alt="Foto Profil">
+            <p>Saya adalah seorang pengembang web yang bersemangat dengan pengalaman dalam membangun aplikasi web interaktif dan desain UI/UX yang responsif. Saya memiliki keterampilan dalam HTML, CSS, JavaScript, dan React.js.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>Keahlian</h2>
+            <div class="skills-grid">
+                <div class="skill">
+                    <h3>HTML & CSS</h3>
+                    <p>Desain responsif dan semantik <br>menggunakan HTML5 & CSS3.</p>
+                </div>
+                <div class="skill">
+                    <h3>JavaScript</h3>
+                    <p>Pengalaman dalam pengembangan <br>aplikasi interaktif dengan JS.</p>
+                </div>
+                <div class="skill">
+                    <h3>React.js</h3>
+                    <p>Membangun aplikasi dinamis <br>menggunakan React dan hooks.</p>
+                </div>
+
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects">
-        <div class="container">
-            <h2>Proyek-Proyek Saya</h2>
-            <div class="projects">
-                <div class="project-card">
-                    
-                    <h3>Proyek 1</h3>
-                    <p>Deskripsi singkat proyek pertama yang menunjukkan keahlian dalam HTML dan CSS.</p>
-                    <a href="https://enhancv-com.translate.goog/resume-skills/html-css/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc&_x_tr_hist=true" target="_blank" class="btn">Lihat Proyek</a>
-                </div>
-                <div class="project-card">
-                    
-                    <h3>Proyek 2</h3>
-                    <p>Deskripsi singkat proyek kedua yang melibatkan JavaScript.</p>
-                    <a href="https://skillcrush-com.translate.goog/blog/projects-you-can-do-with-javascript/?_x_tr_sl=en&_x_tr_tl=id&_x_tr_hl=id&_x_tr_pto=tc" target="_blank" class="btn">Lihat Proyek</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="projects">
-        <div class="container">
-            <div class="projects">
-                <div class="project-card2">
-                    
-                    <h3>Proyek 3</h3>
-                    <p>Deskripsi singkat proyek ketiga menunjukan cara menggunakan python.</p>
-                    <a href="https://primakara.ac.id/blog/info-teknologi/Membuat-web-dengan-python" target="_blank" class="btn">Lihat Proyek</a>
-                </div>
-                <div class="project-card2">
-                    
-                    <h3>Proyek 4</h3>
-                    <p>Deskripsi singkat proyek keempat menunjukan cara menggunakan php dengan MySQL.</p>
-                    <a href="https://www.codepolitan.com/blog/tutorial-membuat-crud-php-dengan-mysql-59897c72d8470/" target="_blank" class="btn">Lihat Proyek</a>
-                </div>
-            </div>
-        </div>
-    </section>
     
 
-
+    <!-- Contact Section -->
     <section id="contact">
         <div class="container">
-            <h2>Kontak</h2>
-            <p>Jika Anda tertarik untuk bekerja sama atau memiliki pertanyaan, hubungi saya melalui form di bawah ini.</p>
+            <h2>Kontak Saya</h2>
             <form id="contact-form">
-                <label for="name">Nama:</label>
-                <input class="text1" type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input class="text1"  type="email" id="email" name="email" required>
-
-                <label for="message">Pesan:</label>
-                <textarea class="text1"  id="message" name="message" rows="4" required></textarea>
-
-                <button type="submit" class="btn">Kirim Pesan</button>
+                <input type="text" id="name" placeholder="Nama Anda" required>
+                <input type="email" id="email" placeholder="Email Anda" required>
+                <textarea id="message" placeholder="Pesan Anda" required></textarea>
+                <button type="submit" class="cta-btn">Kirim Pesan</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
+    <!-- Footer Section -->
+    <footer style="background-color:#587fff;">
         <div class="container">
-            <p>&copy; 2024 fatzxyz. Semua Hak Dilindungi.</p>
-            <div class="social-media">
-                <a href="https://github.com/v4tzz" target="_blank">GitHub</a>
-                <a href="https://www.instagram.com/who.vatz?igsh=ZGVmdnlidzZkcTJu="_blank">Instagram</a>
-            </div>
+            <p>&copy; 2024 fatzxyz | Web Developer</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script>
+        // Form Submission Alert (Optional)
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('Pesan Anda telah dikirim! Terima kasih telah menghubungi saya.');
+});
+    </script>
+    <style>
+        * {
+    font-family: 'poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    
+   background-color: #ffffff;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #ffffff, #436fff);
+  background-size: 200% 100%;
+  animation: waveGradient 6s ease infinite;
+  color: #ffffff;
+  padding: 100px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@keyframes waveGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Tambahkan efek wave */
+header::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 200%;
+  height: 100px;
+  background: radial-gradient(circle, #436fff 10%, transparent 50%);
+  animation: waveMove 6s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@keyframes waveMove {
+  0% {
+    transform: translateX(-50%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+header .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}   
+
+header .hero-content .name {
+    color: #ffffff ;
+    font-weight: 700;
+}
+
+header .hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+
+header .cta-btn {
+    background-color: #ffffff ;
+    color: #587fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+header .cta-btn:hover {
+    background-color: #333;
+}
+
+/* Section */
+section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #587fff ;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: flex;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    justify-items: center;
+    justify-content: center;
+}
+
+.skill {
+    background: #ffffff;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #000000;;
+}
+
+.skill:hover {
+    transform: translateY(-13px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.skill h3 {
+    color: #587fff  ;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+/* Projects Section */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #161616;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.project a {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 8px 20px;
+    background-color: #f1c40f ;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #333333;
+}
+
+/* Contact Section */
+form input,
+form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #587fff ;
+    color: rgb(255, 255, 255);
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #161616;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+/* Styling untuk Foto Profil */
+.profile-img {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #ffffff; /* Border putih untuk efek elegan */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Agar gambar tetap proporsional */
+}
+
+/* Styling untuk teks di sebelah foto */
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.cta-btn {
+            display: inline-block;
+            margin: 10px 0;
+            text-decoration: none;
+        }
+
+        /* Form Login */
+        #login-form input {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+        }
+
+    </style>
+   
 </body>
 </html>
